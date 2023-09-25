@@ -30,11 +30,12 @@ public class Day02_verifyURLTest {
             QUOTE OF THE DAY:
             - Testers do not write a code to PASS
             - We write a code to CATCH A BUG
-            - Our test case failed for this reason. FAIL : Actual URL https://www.amazon.com/ but expected URL is https://amazon.com/
+
+                    - Our test case failed for this reason. FAIL : Actual URL https://www.amazon.com/ but expected URL is https://amazon.com/
             as tester, I shouldn't fix the code to PASS.
             STEPS:
             -1.  Communicate with the Test Lead, Team Lead, or BA to check if that is a documentation issue.
-            If it is a documentation issue, BA should fix the AC, and then we should update our script.
+                    If it is a documentation issue, BA should fix the AC, and then we should update our script.
             -2. If it is an actual bug, then we should communicate with the team to see if a ticket should be raised
             or a new story should be created,...
         */
