@@ -13,6 +13,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -44,49 +45,78 @@
       <recent name="C:\Users\Administrator\Desktop\BATCH 179-180 QA ENG\IdeaProjects\myseleniumproject\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day02_JUnitAnnotations">
-    <configuration name="Day02_JUnitAnnotations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="SearchBox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mytests.SearchBox" />
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myfirstproject.*" />
+          <option name="PATTERN" value="mytests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.myfirstproject" />
-      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day02_JUnitAnnotations" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myseleniumproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mytests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mytests" />
+      <option name="MAIN_CLASS_NAME" value="mytests.SearchBox" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day02_JUnitAnnotations.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task2.printAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myfirstproject.*" />
+          <option name="PATTERN" value="assignment.homework01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.myfirstproject" />
-      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day02_JUnitAnnotations" />
-      <option name="METHOD_NAME" value="test1" />
+      <option name="PACKAGE_NAME" value="assignment.homework01" />
+      <option name="MAIN_CLASS_NAME" value="assignment.homework01.Task2" />
+      <option name="METHOD_NAME" value="printAllTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day02_JUnitAssertions.assertionsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task2.selectByValueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myfirstproject.*" />
+          <option name="PATTERN" value="assignment.homework01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.myfirstproject" />
-      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day02_JUnitAssertions" />
-      <option name="METHOD_NAME" value="assertionsTest" />
+      <option name="PACKAGE_NAME" value="assignment.homework01" />
+      <option name="MAIN_CLASS_NAME" value="assignment.homework01.Task2" />
+      <option name="METHOD_NAME" value="selectByValueTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task2.selectByVisibleTextTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myseleniumproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assignment.homework01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assignment.homework01" />
+      <option name="MAIN_CLASS_NAME" value="assignment.homework01.Task2" />
+      <option name="METHOD_NAME" value="selectByVisibleTextTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -94,9 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Day02_JUnitAssertions.assertionsTest" />
-        <item itemvalue="JUnit.Day02_JUnitAnnotations" />
-        <item itemvalue="JUnit.Day02_JUnitAnnotations.test1" />
+        <item itemvalue="Application.SearchBox" />
+        <item itemvalue="JUnit.SearchBox" />
+        <item itemvalue="JUnit.Task2.printAllTest" />
+        <item itemvalue="JUnit.Task2.selectByVisibleTextTest" />
+        <item itemvalue="JUnit.Task2.selectByValueTest" />
       </list>
     </recent_temporary>
   </component>
