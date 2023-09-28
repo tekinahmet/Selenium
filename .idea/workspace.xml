@@ -46,30 +46,50 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="SearchBox" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="mytests.SearchBox" />
+    <configuration name="Q04_Calculator.divide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mytests.*" />
+          <option name="PATTERN" value="com.myfirstproject.practices.practice01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.myfirstproject.practices.practice01" />
+      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.practices.practice01.Q04_Calculator" />
+      <option name="METHOD_NAME" value="divide" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Q04_Calculator.minus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mytests.*" />
+          <option name="PATTERN" value="com.myfirstproject.practices.practice01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="mytests" />
-      <option name="MAIN_CLASS_NAME" value="mytests.SearchBox" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.myfirstproject.practices.practice01" />
+      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.practices.practice01.Q04_Calculator" />
+      <option name="METHOD_NAME" value="minus" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Q04_Calculator.times" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myseleniumproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myfirstproject.practices.practice01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.myfirstproject.practices.practice01" />
+      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.practices.practice01.Q04_Calculator" />
+      <option name="METHOD_NAME" value="times" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -90,7 +110,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task2.selectByValueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task2.printFirstSelectedOptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
@@ -100,23 +120,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="assignment.homework01" />
       <option name="MAIN_CLASS_NAME" value="assignment.homework01.Task2" />
-      <option name="METHOD_NAME" value="selectByValueTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task2.selectByVisibleTextTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myseleniumproject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assignment.homework01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assignment.homework01" />
-      <option name="MAIN_CLASS_NAME" value="assignment.homework01.Task2" />
-      <option name="METHOD_NAME" value="selectByVisibleTextTest" />
+      <option name="METHOD_NAME" value="printFirstSelectedOptionTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -124,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SearchBox" />
-        <item itemvalue="JUnit.SearchBox" />
+        <item itemvalue="JUnit.Q04_Calculator.minus" />
+        <item itemvalue="JUnit.Q04_Calculator.times" />
+        <item itemvalue="JUnit.Q04_Calculator.divide" />
+        <item itemvalue="JUnit.Task2.printFirstSelectedOptionTest" />
         <item itemvalue="JUnit.Task2.printAllTest" />
-        <item itemvalue="JUnit.Task2.selectByVisibleTextTest" />
-        <item itemvalue="JUnit.Task2.selectByValueTest" />
       </list>
     </recent_temporary>
   </component>

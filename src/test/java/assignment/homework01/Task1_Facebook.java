@@ -1,6 +1,7 @@
 package assignment.homework01;
 
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -19,7 +20,7 @@ public class Task1_Facebook {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));//implicit wait
     }
     @Test
-    public void createNewAccount(){
+    public void createNewAccount() throws InterruptedException {
 //        Navigate to Go to https://www.facebook.com/
         driver.get("https://www.facebook.com/");
 //        Click on Create new account
@@ -38,10 +39,17 @@ public class Task1_Facebook {
         driver.findElement(By.id("day")).sendKeys("22");
         driver.findElement(By.id("month")).sendKeys("Apr");
         driver.findElement(By.id("year")).sendKeys("1985");
+        Thread.sleep(3000);
 //        Enter gender
-        driver.findElement(By.xpath("//span[@class='_5k_2 _5dba']")).click();
+        WebElement male = driver.findElement(By.cssSelector("input[value='2']"));
+        if (!male.isSelected()){
+            male.click();
+        }
+        Assertions.assertTrue(male.isSelected());
+        Thread.sleep(3000);
 //        Click Sign Up
         driver.findElement(By.xpath("//button[@name='websubmit']")).click();
+        Thread.sleep(3000);
     }
     @AfterEach
     public void tearDown(){
