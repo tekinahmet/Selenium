@@ -47,13 +47,14 @@ public class homeworkStateTest extends TestBase {
             boolean alphabeticalOrder = false;
             for (int i = 1; i < numberOfStates.size(); i++) {
                 String currentState = numberOfStates.get(i).getText();
+                System.out.println("currentState = " + currentState);
                 String previousState = numberOfStates.get(i - 1).getText();
+                System.out.println("previousState = " + previousState);
                 if (currentState.compareTo(previousState) < 0) {
                     alphabeticalOrder = true;
                     break;
                 }
             }
-
             if (alphabeticalOrder) {
                 System.out.println("State names are in alphabetical order.");
             } else {

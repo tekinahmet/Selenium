@@ -20,7 +20,7 @@ public class Day01_BasicNavigations {
 //        wait 5 seconds
         //Thread.sleep(5000);
 //        Navigate back to walmart
-        driver.navigate().back();
+        driver.navigate().to("https://www.amazon.com/");
 //        wait 5 seconds
         //Thread.sleep(5000);
 //        Navigate forward to amazon

@@ -1,6 +1,7 @@
 package com.myfirstproject.practices.practice01;
 
 import com.github.javafaker.Faker;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -10,6 +11,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.time.Duration;
+
 
 public class Q03_BeforeEach_FillForm {
 //        Create chrome driver by using @BeforeEach annotation and WebDriverManager
@@ -17,21 +20,25 @@ public class Q03_BeforeEach_FillForm {
     Faker faker;
     @BeforeEach
     public void setUp(){
+        WebDriverManager.chromedriver().setup();// no need to initialize in selenium4.
         driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(java.time.Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         faker = new Faker();
     }
     @Test
     public void gmiBankTest() throws InterruptedException {
 //        Go to url : http://www.gmibank.com/
         driver.get("http://www.gmibank.com/");
+
 //        Click on 'User Icon'
         WebElement userIcon = driver.findElement(By.id("account-menu"));
         userIcon.click();
+
 //        Click on 'Register'
-        WebElement register = driver.findElement(By.cssSelector("a.dropdown-item:nth-child(2) > span:nth-child(2)"));
+        WebElement register = driver.findElement(By.linkText("Register"));
         register.click();
+
 //        Enter SSN
         String ssn = faker.idNumber().ssnValid();
         System.out.println("ssn = " + ssn);
@@ -47,7 +54,7 @@ public class Q03_BeforeEach_FillForm {
 //        Enter Last Name
         String lastName = faker.name().lastName();
         System.out.println("lastName = " + lastName);
-        driver.findElement(By.id("lastname")).sendKeys("Douglas");
+        driver.findElement(By.id("lastname")).sendKeys(lastName);
         Thread.sleep(2000);
 
 //        Enter Address
@@ -87,8 +94,10 @@ public class Q03_BeforeEach_FillForm {
         Thread.sleep(2000);
 
 //        Assert that user registered
-        String alertMessage = driver.findElement(By.xpath("(//div[@role='alert'])[1]")).getText();
-        Assertions.assertTrue(alertMessage.contains("Registration saved"));
+//        WebElement alert1 = driver.findElement(By.xpath("(//div[@role='alert'])[1]"));
+//        String alert2 = alert1.getText();
+        String alert = driver.findElement(By.xpath("(//div[@role='alert'])[1]")).getText();
+        Assertions.assertTrue(alert.contains("Registration saved"));
         Thread.sleep(2000);
     }
 //        Close the browser by using @AfterEach annotation

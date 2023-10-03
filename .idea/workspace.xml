@@ -32,20 +32,59 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "C:/Users/Administrator/Desktop/BATCH 179-180 QA ENG/IdeaProjects/myseleniumproject/resources",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.3137931",
+    "settings.editor.selected.configurable": "configurable.group.tools"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\BATCH 179-180 QA ENG\IdeaProjects\myseleniumproject\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\Desktop\BATCH 179-180 QA ENG\IdeaProjects\myseleniumproject\drivers" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="Day05_Alerts.dismissAlert" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myseleniumproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myfirstproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.myfirstproject" />
+      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day05_Alerts" />
+      <option name="METHOD_NAME" value="dismissAlert" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day06_NewWindows.newWindowTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myseleniumproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myfirstproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.myfirstproject" />
+      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day06_NewWindows" />
+      <option name="METHOD_NAME" value="newWindowTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Q04_Calculator.divide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
@@ -62,39 +101,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Q04_Calculator.minus" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myseleniumproject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.myfirstproject.practices.practice01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.myfirstproject.practices.practice01" />
-      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.practices.practice01.Q04_Calculator" />
-      <option name="METHOD_NAME" value="minus" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Q04_Calculator.times" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myseleniumproject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.myfirstproject.practices.practice01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.myfirstproject.practices.practice01" />
-      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.practices.practice01.Q04_Calculator" />
-      <option name="METHOD_NAME" value="times" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task2.printAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task3.dropdownTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
@@ -103,24 +110,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="assignment.homework01" />
-      <option name="MAIN_CLASS_NAME" value="assignment.homework01.Task2" />
-      <option name="METHOD_NAME" value="printAllTest" />
+      <option name="MAIN_CLASS_NAME" value="assignment.homework01.Task3" />
+      <option name="METHOD_NAME" value="dropdownTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task2.printFirstSelectedOptionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WebTables.webTables" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assignment.homework01.*" />
+          <option name="PATTERN" value="mytests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="assignment.homework01" />
-      <option name="MAIN_CLASS_NAME" value="assignment.homework01.Task2" />
-      <option name="METHOD_NAME" value="printFirstSelectedOptionTest" />
+      <option name="PACKAGE_NAME" value="mytests" />
+      <option name="MAIN_CLASS_NAME" value="mytests.WebTables" />
+      <option name="METHOD_NAME" value="webTables" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -128,11 +135,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Q04_Calculator.minus" />
-        <item itemvalue="JUnit.Q04_Calculator.times" />
+        <item itemvalue="JUnit.Day05_Alerts.dismissAlert" />
+        <item itemvalue="JUnit.WebTables.webTables" />
+        <item itemvalue="JUnit.Task3.dropdownTest" />
+        <item itemvalue="JUnit.Day06_NewWindows.newWindowTest" />
         <item itemvalue="JUnit.Q04_Calculator.divide" />
-        <item itemvalue="JUnit.Task2.printFirstSelectedOptionTest" />
-        <item itemvalue="JUnit.Task2.printAllTest" />
       </list>
     </recent_temporary>
   </component>

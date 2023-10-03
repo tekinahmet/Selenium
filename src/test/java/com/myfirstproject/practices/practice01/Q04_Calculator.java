@@ -2,7 +2,6 @@ package com.myfirstproject.practices.practice01;
 
 import com.github.javafaker.Faker;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
@@ -10,9 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class Q04_Calculator {
 //    Create chrome driver by using @BeforeEach annotation and WebDriverManager
@@ -79,8 +76,8 @@ public class Q04_Calculator {
         driver.findElement(By.id("number2")).sendKeys("5");
 //        Select divide option
         WebElement functionDropdown = driver.findElement(By.id("function"));
-        Select division = new Select(functionDropdown);
-        division.selectByIndex(1);
+        Select times = new Select(functionDropdown);
+        times.selectByIndex(1);
 //    Click on Calculate
         driver.findElement(By.id("calculate")).click();
 //    Get the result
@@ -96,32 +93,22 @@ public class Q04_Calculator {
         driver.get("https://testpages.herokuapp.com/styled/index.html");
 //    Click on  Calculator under Micro Apps
         driver.findElement(By.id("calculatetest")).click();
-
 //    Type any number in the first input
-
         driver.findElement(By.id("number1")).sendKeys("5");
-
 //    Type any number in the second input
         driver.findElement(By.id("number2")).sendKeys("2");
-
-
-//      Select minus option
+//    Select minus option
         WebElement functionDropdown = driver.findElement(By.id("function"));
-        Select division = new Select(functionDropdown);
-        division.selectByVisibleText("minus");
-
+        Select minus = new Select(functionDropdown);
+        minus.selectByVisibleText("minus");
 //    Click on Calculate
         driver.findElement(By.id("calculate")).click();
-
 //    Get the result
         String answer = driver.findElement(By.id("answer")).getText();
-
 //    Verify the result
         assertEquals("3", answer);
-
 //    Print the result
         System.out.println(answer);
-
     }
 //    Close the browser by using @AfterEach annotation
     @AfterEach
