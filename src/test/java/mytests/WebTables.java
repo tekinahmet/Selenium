@@ -14,13 +14,13 @@ public class WebTables extends TestBase {
 //        Task 1 : Print the entire table
 
 //        https://the-internet.herokuapp.com/tables
-        TestBase.driver.get("https://the-internet.herokuapp.com/tables ");
+        driver.get("https://the-internet.herokuapp.com/tables ");
         System.out.println("***ENTIRE TABLE***");
-        String entireTable = TestBase.driver.findElement(By.xpath("//table[@id='table1']")).getText();
+        String entireTable = driver.findElement(By.xpath("//table[@id='table1']")).getText();
         System.out.println(entireTable);
 //        ALTERNATIVELY
         int dataNum=1;
-        List<WebElement> elementsList = TestBase.driver.findElements(By.xpath("//table[@id='table1']//td"));
+        List<WebElement> elementsList = driver.findElements(By.xpath("//table[@id='table1']//td"));
         for (WebElement eachElement : elementsList){
             System.out.println("Data Number : " + dataNum+ "-->" + eachElement.getText());
             dataNum++;
@@ -30,7 +30,7 @@ public class WebTables extends TestBase {
 
 //        Task 2 : Print All Rows
         System.out.println("***Task 2 : Print All Rows***");
-        List<WebElement> allRows = TestBase.driver.findElements(By.xpath("//table[@id='table1']//td"));
+        List<WebElement> allRows = driver.findElements(By.xpath("//table[@id='table1']//td"));
         int rowNum = 1;
         for (WebElement eachRow:allRows ) {
             System.out.println("Row : " + rowNum + "-->" +eachRow.getText());
@@ -45,7 +45,7 @@ public class WebTables extends TestBase {
 //        Task 4 : Print column 5 data in the table body
         System.out.println("***Task 4 : Print column 5 data in the table body***");
         //System.out.println(driver.findElement(By.xpath("//table[@id='table1']//tr//td[5]")).getText());//it printed the first cell of the column.
-        List<WebElement> col5 = TestBase.driver.findElements(By.xpath("//table[@id='table1']//tr//td[5]"));//it printed the entire column.
+        List<WebElement> col5 = driver.findElements(By.xpath("//table[@id='table1']//tr//td[5]"));//it printed the entire column.
         int colNum = 1;
         for (WebElement each:col5) {
             System.out.println("Row : " + colNum + "-->" + each.getText());

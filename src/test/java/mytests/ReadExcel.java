@@ -1,4 +1,4 @@
-package com.myfirstproject;
+package mytests;
 import org.apache.poi.ss.usermodel.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
