@@ -26,17 +26,17 @@ public class Task4 {
     public void test() throws InterruptedException {
 //        When user goes to https://jqueryui.com/autocomplete/
         driver.get("https://jqueryui.com/autocomplete/");
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 //        And type Apple
         //WebElement iframe = driver.findElement(By.xpath("//iframe[@class='demo-frame']"));
         driver.switchTo().frame(0);
         WebElement apple = driver.findElement(By.xpath("//input[@id='tags']"));
         apple.sendKeys("Apple");
-        Thread.sleep(3000);
+        Thread.sleep(1000);
 //        Then select Applescript
         apple.sendKeys(Keys.DOWN);
         apple.sendKeys(Keys.ENTER);
-        Thread.sleep(2000);
+        Thread.sleep(1000);
 //        And check if Applescript is selected(you can get value by js to get text of the input)
         WebElement appleScriptSelected = driver.findElement(By.xpath("//input[@id='tags']"));
         JavascriptExecutor js = (JavascriptExecutor) driver;
