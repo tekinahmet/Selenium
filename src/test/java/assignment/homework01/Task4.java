@@ -27,7 +27,7 @@ public class Task4 {
         driver.findElement(By.name("btnK")).click();
 
 //        And print how many related results displayed on Google
-        System.out.println(driver.findElement(By.id("result-stats")).getText());
+        System.out.println(driver.findElement(By.id("result-stats")).getText().split(" ")[1]);
     }
     @AfterEach
     public void tearDown(){
