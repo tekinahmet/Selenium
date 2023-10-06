@@ -34,6 +34,7 @@ public abstract class TestBase {
         Thread.sleep(1000);
         driver.quit();
     }
+
     //DROPDOWN
 //    Create a method that select an option from a dropdown index
     public static void dropdownSelectByIndex(WebElement dropdownElement,int index){

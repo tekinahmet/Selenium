@@ -1,9 +1,10 @@
 package com.myfirstproject;
 
 import com.github.javafaker.Faker;
+import com.myfirstproject.utilities.TestBase;
 import org.junit.jupiter.api.Test;
 
-public class Day04_FakerTest {
+public class Day04_FakerTest extends TestBase {
 
     /*
     We use Java Faker class to create fake data for our test cases.

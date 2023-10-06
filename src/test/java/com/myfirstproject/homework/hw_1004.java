@@ -1,4 +1,4 @@
-package mytests;
+package com.myfirstproject.homework;
 
 import com.myfirstproject.utilities.TestBase;
 import org.junit.jupiter.api.Assertions;

@@ -58,7 +58,7 @@
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mytests.*" />
+          <option name="PATTERN" value="com.myfirstproject.homework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -74,7 +74,7 @@
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mytests.*" />
+          <option name="PATTERN" value="com.myfirstproject.homework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -86,33 +86,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Actions2.dragAndDropTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day05_Windows.windowsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="mytests.*" />
+          <option name="PATTERN" value="com.myfirstproject.homework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="mytests" />
-      <option name="MAIN_CLASS_NAME" value="mytests.Actions2" />
-      <option name="METHOD_NAME" value="dragAndDropTest" />
+      <option name="PACKAGE_NAME" value="com.myfirstproject" />
+      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day05_Windows" />
+      <option name="METHOD_NAME" value="windowsTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day07_Cookies.cookiesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day06_NewWindows.newTabTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myfirstproject.*" />
+          <option name="PATTERN" value="com.myfirstproject.homework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.myfirstproject" />
-      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day07_Cookies" />
-      <option name="METHOD_NAME" value="cookiesTest" />
+      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day06_NewWindows" />
+      <option name="METHOD_NAME" value="newTabTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -122,7 +122,7 @@
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myfirstproject.*" />
+          <option name="PATTERN" value="com.myfirstproject.homework.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Day06_NewWindows.newTabTest" />
+        <item itemvalue="JUnit.Day05_Windows.windowsTest" />
         <item itemvalue="JUnit.Actions1.actions1Test" />
         <item itemvalue="JUnit.Day08_Actions2.actionTest" />
         <item itemvalue="JUnit.Actions2.actions3Test" />
-        <item itemvalue="JUnit.Actions2.dragAndDropTest" />
-        <item itemvalue="JUnit.Day07_Cookies.cookiesTest" />
       </list>
     </recent_temporary>
   </component>

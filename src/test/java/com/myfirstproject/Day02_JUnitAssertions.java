@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 public class Day02_JUnitAssertions {
     /*
     -Assertion is used to check if expected equals to actual
-    -Every test case must hav an assertions.
+    -Every test case must have an assertions.
         expected  =  actual => PASS
         expected  !=  actual => FAIL
      *******************
