@@ -8,25 +8,42 @@ import org.openqa.selenium.interactions.Actions;
 
 public class Day08_Actions2 extends TestBase {
     @Test
-    public void actionTest() throws InterruptedException {
-//        Given user is on https://jqueryui.com/droppable/
-            driver.get("https://jqueryui.com/droppable/");
-//        And user moves the target element(Drag me to my target) in to
-            // First locate both elements
-            // But there is an Iframe there, so we need to switch first
-            switchIframeByIndex(0); // now driver is inside the ifram , so elements are visible to driver
-            WebElement sourceElement = driver.findElement(By.id("draggable"));
-            WebElement targetElement = driver.findElement(By.id("droppable"));
-//      destination(Drop here)
-            Actions actions = new Actions(driver);
-            Thread.sleep(3000);
-            // 1. way:
-            //  actions.dragAndDrop(sourceElement, targetElement).perform();
-            // 2nd. way:
-            //  actions.dragAndDropBy(sourceElement,467,265).perform(); // dragAndDropBy() moves the element to any position on the page using x and y coordinates
-            // 3rd. way:
-            //  actions.clickAndHold(sourceElement).moveToElement(targetElement).build().perform();
-            // 4th. way:
-            actions.clickAndHold(sourceElement).moveToElement(targetElement).release().build().perform();
-        }
+    public void test() {
+
+        // Go to URL : http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html
+        driver.get("http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html");
+
+        // Match capitals with countries
+
+        //Locate sources-Capital
+        WebElement oslo = driver.findElement(By.id("box1"));
+        WebElement stockholm = driver.findElement(By.id("box2"));
+        WebElement washington = driver.findElement(By.id("box3"));
+        WebElement copenhagen = driver.findElement(By.id("box4"));
+        WebElement seoul = driver.findElement(By.id("box5"));
+        WebElement rome = driver.findElement(By.id("box6"));
+        WebElement madrid = driver.findElement(By.id("box7"));
+
+        //Locate targets-Countries
+        WebElement norway = driver.findElement(By.id("box101"));
+        WebElement sweden = driver.findElement(By.id("box102"));
+        WebElement unitedStates = driver.findElement(By.id("box103"));
+        WebElement denmark = driver.findElement(By.id("box104"));
+        WebElement southKorea = driver.findElement(By.id("box105"));
+        WebElement italy = driver.findElement(By.id("box106"));
+        WebElement spain = driver.findElement(By.id("box107"));
+
+        Actions actions = new Actions(driver);
+        actions
+                .dragAndDrop(oslo, norway)
+                .dragAndDrop(stockholm, sweden)
+                .dragAndDrop(washington, unitedStates)
+                .dragAndDrop(copenhagen, denmark)
+                .dragAndDrop(seoul, southKorea)
+                .dragAndDrop(rome, italy)
+                .dragAndDrop(madrid, spain)
+                .perform();
+
     }
+
+}

@@ -56,8 +56,8 @@ public class WebTables extends TestBase {
 //        Parameter 1 = row number
 //        Parameter 2 = column number
 //        printData(2,3);  => prints data in 2nd row 3rd column
-        System.out.println("***HOMEWORK***");
-        TestBase.printData(3,5);
-    }
+//        System.out.println("***HOMEWORK***");
+//        TestBase.printData(3,5);
+  }
 }
 

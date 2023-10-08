@@ -29,6 +29,7 @@
 }</component>
   <component name="ProjectId" id="2VnpeaaZIEiJByJmZi2oFYQ8Nur" />
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
@@ -40,7 +41,7 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.3137931&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.tools&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -70,77 +71,76 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Actions2.actions3Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day09_RobotClass.fileUploadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myfirstproject.homework.*" />
+          <option name="PATTERN" value="com.myfirstproject.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="mytests" />
-      <option name="MAIN_CLASS_NAME" value="mytests.Actions2" />
-      <option name="METHOD_NAME" value="actions3Test" />
+      <option name="PACKAGE_NAME" value="com.myfirstproject" />
+      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day09_RobotClass" />
+      <option name="METHOD_NAME" value="fileUploadTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day05_Windows.windowsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day09_RobotClass.fileUploadTestRobot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myfirstproject.homework.*" />
+          <option name="PATTERN" value="com.myfirstproject.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.myfirstproject" />
-      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day05_Windows" />
-      <option name="METHOD_NAME" value="windowsTest" />
+      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day09_RobotClass" />
+      <option name="METHOD_NAME" value="fileUploadTestRobot" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day06_NewWindows.newTabTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day10_RobotClass.fileUploadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myfirstproject.homework.*" />
+          <option name="PATTERN" value="com.myfirstproject.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.myfirstproject" />
-      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day06_NewWindows" />
-      <option name="METHOD_NAME" value="newTabTest" />
+      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day10_RobotClass" />
+      <option name="METHOD_NAME" value="fileUploadTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day08_Actions2.actionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myfirstproject.homework.*" />
+          <option name="PATTERN" value="assignment.homework02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.myfirstproject" />
-      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day08_Actions2" />
-      <option name="METHOD_NAME" value="actionTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="assignment.homework02" />
+      <option name="MAIN_CLASS_NAME" value="assignment.homework02.Task5" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Day06_NewWindows.newTabTest" />
-        <item itemvalue="JUnit.Day05_Windows.windowsTest" />
+        <item itemvalue="JUnit.Day09_RobotClass.fileUploadTest" />
+        <item itemvalue="JUnit.Day10_RobotClass.fileUploadTest" />
+        <item itemvalue="JUnit.Day09_RobotClass.fileUploadTestRobot" />
         <item itemvalue="JUnit.Actions1.actions1Test" />
-        <item itemvalue="JUnit.Day08_Actions2.actionTest" />
-        <item itemvalue="JUnit.Actions2.actions3Test" />
+        <item itemvalue="JUnit.Task5" />
       </list>
     </recent_temporary>
   </component>

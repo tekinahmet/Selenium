@@ -1,24 +1,24 @@
 package com.myfirstproject.utilities;
-
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
+import java.awt.*;
+import java.awt.datatransfer.StringSelection;
+import java.awt.event.KeyEvent;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
-
 public abstract class TestBase {
     /*
     TestBase class is used for calling repetitive pre-conditions and post-conditions
     make the driver protected because it should be visible in the other classes
-
     Test base will be exteded other test classes and @Before and @After methods will be automatically executed
      */
     protected static WebDriver driver;
@@ -30,11 +30,9 @@ public abstract class TestBase {
         driver.manage().window().maximize();
     }
     @AfterEach
-    public void tearDown() throws InterruptedException {
-        Thread.sleep(1000);
-        driver.quit();
+    public void tearDown(){
+//        driver.quit();
     }
-
     //DROPDOWN
 //    Create a method that select an option from a dropdown index
     public static void dropdownSelectByIndex(WebElement dropdownElement,int index){
@@ -129,15 +127,11 @@ public abstract class TestBase {
         for (String childWindow : driver.getWindowHandles()) {
             driver.switchTo().window(childWindow);
             if (driver.getTitle().equals(targetTitle)) {
-                System.out.println("Switched to the window : " + targetTitle);
+                System.out.println("Switched to the window : "+targetTitle);
                 return;
             }
         }
         driver.switchTo().window(origin);
-    }
-    public static void printData(int rowNum, int columnNum){
-        WebElement printData = driver.findElement(By.xpath("//table[@id='table1']//tr["+rowNum+"]//td["+columnNum+"]"));
-        System.out.println(printData.getText());
     }
     //ACTIONS_DOUBLE CLICK : doubleClick(buttonElement)
     public static void actionsDoubleClick(WebElement element) {
@@ -176,7 +170,7 @@ public abstract class TestBase {
         //        Actions actions = new Actions(driver);
         new Actions(driver).dragAndDropBy(source,x,y).perform();
     }
-    //   JS EXECUTOR METHODS
+    //    JS EXECUTOR METHODS
     /*
     click with JS
     param : WebElement
@@ -186,7 +180,7 @@ public abstract class TestBase {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();",element);
     }
-    //   EXPLICITLY WAIT FOR ELEMENT TO BE VISIBLE, SCROLL INTO THE ELEMENT, THEN CLICK BY JS
+    //    EXPLICITLY WAIT FOR ELEMENT TO BE VISIBLE, SCROLL INTO THE ELEMENT, THEN CLICK BY JS
     public static void clickWithTimeoutByJS(WebElement element) {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", waitForVisibility(element,5));
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
@@ -253,7 +247,7 @@ public abstract class TestBase {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].setAttribute('value','"+text+"')",inputElement);
     }
-    /*  HARD WAIT:
+    /*   HARD WAIT:
     @param : second
   */
     public static void waitFor(int seconds){
@@ -266,7 +260,7 @@ public abstract class TestBase {
     /*
    SELENIUM WAIT REUSABLE METHODS
     */
-    //   DYNAMIC SELENIUM WAITS:
+    //    DYNAMIC SELENIUM WAITS:
     //===============Explicit Wait==============//
     public static WebElement waitForVisibility(WebElement element, int timeout) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
@@ -276,5 +270,49 @@ public abstract class TestBase {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
-
+    public static WebElement waitForClickablility(WebElement element, int timeout) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
+        return wait.until(ExpectedConditions.elementToBeClickable(element));
+    }
+    public static WebElement waitForClickablility(By locator, int timeout) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
+        return wait.until(ExpectedConditions.elementToBeClickable(locator));
+    }
+    //======Fluent Wait====
+    // params : xpath of teh element , max timeout in seconds, polling in second
+    public static WebElement fluentWait(String xpath, int withTimeout, int pollingEvery) {
+        FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver)
+                .withTimeout(Duration.ofSeconds(withTimeout))//Wait 3 second each time
+                .pollingEvery(Duration.ofSeconds(pollingEvery))//Check for the element every 1 second
+                .withMessage("Ignoring No Such Element Exception")
+                .ignoring(NoSuchElementException.class);
+        WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
+        return element;
+    }
+    //    ROBOT UPLOAD FILE
+    public static void uploadFile(String pathOfFile){
+        try {
+            waitFor(1);
+//            copy the path of the file that is given
+            StringSelection stringSelection = new StringSelection(pathOfFile);
+            Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection,null);
+//            creating robot object
+            Robot robot = new Robot();
+//            press control V = paste
+            robot.keyPress(KeyEvent.VK_CONTROL);
+            robot.keyPress(KeyEvent.VK_V);
+            waitFor(1);
+//            release control V
+            robot.keyRelease(KeyEvent.VK_CONTROL);
+            robot.keyRelease(KeyEvent.VK_V);
+            waitFor(1);
+//            press enter
+            robot.keyPress(KeyEvent.VK_ENTER);
+//            release enter
+            robot.keyRelease(KeyEvent.VK_ENTER);
+            waitFor(1);
+            System.out.println("Upload is completed...");
+        }catch (Exception e){
+        }
+    }
 }
