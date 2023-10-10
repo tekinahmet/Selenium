@@ -1,4 +1,5 @@
 package com.myfirstproject.utilities;
+import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.*;
@@ -11,8 +12,12 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Random;
 public abstract class TestBase {
@@ -31,7 +36,7 @@ public abstract class TestBase {
     }
     @AfterEach
     public void tearDown(){
-//        driver.quit();
+        driver.quit();
     }
     //DROPDOWN
 //    Create a method that select an option from a dropdown index
@@ -314,5 +319,49 @@ public abstract class TestBase {
             System.out.println("Upload is completed...");
         }catch (Exception e){
         }
+    }
+    //        SCREENSHOTS : capture the screenshot of entire page
+    public void captureScreenshotEntirePage(){
+//        1. getScreenShotAs method to capture the screenshot
+        File image = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+//        2. save the image in a path with a dynamic name
+        String now = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+        String filePath = System.getProperty("user.dir")+"/test-output/Screenshot/"+now+"image.png";
+//        3. save the image in the path
+        try {
+            FileUtils.copyFile(image,new File(filePath));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    //        SCREENSHOTS : capture the screenshot of the given WEB ELEMENT . Ex: captureScreenshotOfElement(logoElement)
+    public void captureScreenshotOfElement(WebElement element){
+        //        1. getScreenShotAs method to capture the screenshot
+        File image = element.getScreenshotAs(OutputType.FILE);
+//        2. save the image in a path with a dynamic name
+        String now = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+        String filePath = System.getProperty("user.dir")+"/test-output/ElementsScreenshot/"+now+"image.png";
+//        3. save the image in the path
+        try {
+            FileUtils.copyFile(image,new File(filePath));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+//        SCREENSHOTS : capture the screenshot of the given WEB ELEMENT . Ex: captureScreenshotOfElement(logoElement)
+    public static String captureScreenshotEntirePageAsString(){
+        //        1. getScreenShotAs method to capture the screenshot
+        File image = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+        //        2. save the image in a path with a dynamic name
+        String now = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+        String filePath = System.getProperty("user.dir")+"/test-output/Reports/"+now+"image.png";
+        //        3. save the image in the path
+        try {
+            FileUtils.copyFile(image,new File(filePath));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        //       4. return the path of the image as string. (THIS WILL BE USED TO ATTACH IN THE EXTENT REPORTS)
+        return new File(filePath).getAbsolutePath();
     }
 }

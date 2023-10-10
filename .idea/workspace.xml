@@ -55,22 +55,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="Actions1.actions1Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myseleniumproject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.myfirstproject.homework.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mytests" />
-      <option name="MAIN_CLASS_NAME" value="mytests.Actions1" />
-      <option name="METHOD_NAME" value="actions1Test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Day09_RobotClass.fileUploadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
@@ -87,7 +71,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day09_RobotClass.fileUploadTestRobot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day11_CaptureScreenshotOfElements.captureScreenshotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
@@ -96,14 +80,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.myfirstproject" />
-      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day09_RobotClass" />
-      <option name="METHOD_NAME" value="fileUploadTestRobot" />
+      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day11_CaptureScreenshotOfElements" />
+      <option name="METHOD_NAME" value="captureScreenshotTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day10_RobotClass.fileUploadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day11_CaptureScreenshotOfElements.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
@@ -112,35 +96,52 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.myfirstproject" />
-      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day10_RobotClass" />
-      <option name="METHOD_NAME" value="fileUploadTest" />
+      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day11_CaptureScreenshotOfElements" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Day11_NoSuchElementException.noSuchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assignment.homework02.*" />
+          <option name="PATTERN" value="com.myfirstproject.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="assignment.homework02" />
-      <option name="MAIN_CLASS_NAME" value="assignment.homework02.Task5" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.myfirstproject" />
+      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day11_NoSuchElementException" />
+      <option name="METHOD_NAME" value="noSuchTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day11_StaleElementReferenceException.slateReferenceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myseleniumproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myfirstproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.myfirstproject" />
+      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day11_StaleElementReferenceException" />
+      <option name="METHOD_NAME" value="slateReferenceTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Day11_CaptureScreenshotOfElements.captureScreenshotTest" />
+        <item itemvalue="JUnit.Day11_CaptureScreenshotOfElements.test" />
+        <item itemvalue="JUnit.Day11_StaleElementReferenceException.slateReferenceTest" />
+        <item itemvalue="JUnit.Day11_NoSuchElementException.noSuchTest" />
         <item itemvalue="JUnit.Day09_RobotClass.fileUploadTest" />
-        <item itemvalue="JUnit.Day10_RobotClass.fileUploadTest" />
-        <item itemvalue="JUnit.Day09_RobotClass.fileUploadTestRobot" />
-        <item itemvalue="JUnit.Actions1.actions1Test" />
-        <item itemvalue="JUnit.Task5" />
       </list>
     </recent_temporary>
   </component>
