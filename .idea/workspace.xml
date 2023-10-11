@@ -54,23 +54,7 @@
       <recent name="C:\Users\Administrator\Desktop\BATCH 179-180 QA ENG\IdeaProjects\myseleniumproject\drivers" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Day09_RobotClass.fileUploadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myseleniumproject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.myfirstproject.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.myfirstproject" />
-      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day09_RobotClass" />
-      <option name="METHOD_NAME" value="fileUploadTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Day12_ExtentReports.extentReportsTest2">
     <configuration name="Day11_CaptureScreenshotOfElements.captureScreenshotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
@@ -103,22 +87,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day11_NoSuchElementException.noSuchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myseleniumproject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.myfirstproject.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.myfirstproject" />
-      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day11_NoSuchElementException" />
-      <option name="METHOD_NAME" value="noSuchTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Day11_StaleElementReferenceException.slateReferenceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
@@ -135,13 +103,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Day12_ExtentReports.captureScreenshotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myseleniumproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myfirstproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.myfirstproject" />
+      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day12_ExtentReports" />
+      <option name="METHOD_NAME" value="captureScreenshotTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Day12_ExtentReports.extentReportsTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myseleniumproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myfirstproject.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.myfirstproject" />
+      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day12_ExtentReports" />
+      <option name="METHOD_NAME" value="extentReportsTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Day12_ExtentReports.extentReportsTest2" />
+        <item itemvalue="JUnit.Day12_ExtentReports.captureScreenshotTest" />
         <item itemvalue="JUnit.Day11_CaptureScreenshotOfElements.captureScreenshotTest" />
         <item itemvalue="JUnit.Day11_CaptureScreenshotOfElements.test" />
         <item itemvalue="JUnit.Day11_StaleElementReferenceException.slateReferenceTest" />
-        <item itemvalue="JUnit.Day11_NoSuchElementException.noSuchTest" />
-        <item itemvalue="JUnit.Day09_RobotClass.fileUploadTest" />
       </list>
     </recent_temporary>
   </component>
