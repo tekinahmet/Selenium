@@ -54,7 +54,7 @@
       <recent name="C:\Users\Administrator\Desktop\BATCH 179-180 QA ENG\IdeaProjects\myseleniumproject\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Day12_ExtentReports.extentReportsTest2">
+  <component name="RunManager">
     <configuration name="Day11_CaptureScreenshotOfElements.captureScreenshotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">

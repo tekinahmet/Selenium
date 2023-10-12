@@ -84,7 +84,7 @@ public abstract class TestBase {
     }
     @AfterEach
     public void tearDown(){
-//        driver.quit();
+        driver.quit();
     }
     //DROPDOWN
 //    Create a method that select an option from a dropdown index
@@ -373,7 +373,7 @@ public abstract class TestBase {
 //        1. getScreenShotAs method to capture the screenshot
         File image = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 //        2. save the image in a path with a dynamic name
-        String now = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+        String now = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date())+System.nanoTime();
         String filePath = System.getProperty("user.dir")+"/test-output/Screenshot/"+now+"image.png";
 //        3. save the image in the path
         try {
@@ -387,7 +387,7 @@ public abstract class TestBase {
         //        1. getScreenShotAs method to capture the screenshot
         File image = element.getScreenshotAs(OutputType.FILE);
 //        2. save the image in a path with a dynamic name
-        String now = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+        String now = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date())+System.nanoTime();
         String filePath = System.getProperty("user.dir")+"/test-output/ElementsScreenshot/"+now+"image.png";
 //        3. save the image in the path
         try {
@@ -401,7 +401,7 @@ public abstract class TestBase {
         //        1. getScreenShotAs method to capture the screenshot
         File image = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         //        2. save the image in a path with a dynamic name
-        String now = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+        String now = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date())+System.nanoTime();
         String filePath = System.getProperty("user.dir")+"/test-output/Reports/"+now+"image.png";
         //        3. save the image in the path
         try {
