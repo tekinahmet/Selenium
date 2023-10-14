@@ -2,6 +2,7 @@ package com.myfirstproject.utilities;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.github.javafaker.Faker;
 import org.apache.commons.io.FileUtils;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
@@ -84,7 +85,7 @@ public abstract class TestBase {
     }
     @AfterEach
     public void tearDown(){
-        driver.quit();
+//        driver.quit();
     }
     //DROPDOWN
 //    Create a method that select an option from a dropdown index

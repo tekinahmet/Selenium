@@ -40,7 +40,6 @@ public class Day07_Cookies extends TestBase {
         for (Cookie each: driver.manage().getCookies()) {
             System.out.println(each);
         }
-
 //        5. Delete all of the cookies
         System.out.println("***Task 5***");
        driver.manage().deleteAllCookies();
