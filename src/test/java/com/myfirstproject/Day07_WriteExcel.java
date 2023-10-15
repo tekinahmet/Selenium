@@ -22,7 +22,7 @@ public class Day07_WriteExcel {
 
 //        Open the first worksheet
             Sheet sheet1 = workbook.getSheetAt(0);//get first sheet by index. index starts at 0
-//            Sheet sheet1 = workbook.getSheet("Sheet1");//gets the sheet with its name
+//        Sheet sheet1 = workbook.getSheet("Sheet1");//gets the sheet with its name
 
 //        Go to first row
             Row row1 = sheet1.getRow(0);//index stars at 0

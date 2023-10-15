@@ -55,7 +55,7 @@
       <recent name="C:\Users\Administrator\Desktop\BATCH 179-180 QA ENG\IdeaProjects\myseleniumproject\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.Q02_WebTable_RoofHeight.test">
+  <component name="RunManager">
     <configuration name="Q01_Actions_DrawShapes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
@@ -137,8 +137,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Q02_WebTable_RoofHeight.test" />
         <item itemvalue="JUnit.Q01_Actions_DrawShapes" />
+        <item itemvalue="JUnit.Q02_WebTable_RoofHeight.test" />
         <item itemvalue="JUnit.Task4.searchBox" />
         <item itemvalue="JUnit.Task3.printTest" />
         <item itemvalue="JUnit.TC09_SearchProduct.test" />
