@@ -49,87 +49,87 @@
       <recent name="C:\Users\Administrator\Desktop\BATCH 179-180 QA ENG\IdeaProjects\myseleniumproject\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\Desktop\BATCH 179-180 QA ENG\IdeaProjects\myseleniumproject\resources" />
       <recent name="C:\Users\Administrator\Desktop\BATCH 179-180 QA ENG\IdeaProjects\myseleniumproject\src\test\java" />
       <recent name="C:\Users\Administrator\Desktop\BATCH 179-180 QA ENG\IdeaProjects\myseleniumproject\src\test" />
       <recent name="C:\Users\Administrator\Desktop\BATCH 179-180 QA ENG\IdeaProjects\myseleniumproject\drivers" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Day11_CaptureScreenshotOfElements.captureScreenshotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Q02_WebTable_RoofHeight.test">
+    <configuration name="Q01_Actions_DrawShapes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myfirstproject.*" />
+          <option name="PATTERN" value="com.myfirstproject.practices.practice06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.myfirstproject" />
-      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day11_CaptureScreenshotOfElements" />
-      <option name="METHOD_NAME" value="captureScreenshotTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.myfirstproject.practices.practice06" />
+      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.practices.practice06.Q01_Actions_DrawShapes" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day11_CaptureScreenshotOfElements.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Q02_WebTable_RoofHeight.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myfirstproject.*" />
+          <option name="PATTERN" value="com.myfirstproject.practices.practice06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.myfirstproject" />
-      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day11_CaptureScreenshotOfElements" />
+      <option name="PACKAGE_NAME" value="com.myfirstproject.practices.practice06" />
+      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.practices.practice06.Q02_WebTable_RoofHeight" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day11_StaleElementReferenceException.slateReferenceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TC09_SearchProduct.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myfirstproject.*" />
+          <option name="PATTERN" value="automationexercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.myfirstproject" />
-      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day11_StaleElementReferenceException" />
-      <option name="METHOD_NAME" value="slateReferenceTest" />
+      <option name="PACKAGE_NAME" value="automationexercise" />
+      <option name="MAIN_CLASS_NAME" value="automationexercise.TC09_SearchProduct" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day12_ExtentReports.captureScreenshotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task3.printTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myfirstproject.*" />
+          <option name="PATTERN" value="assignment.homework02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.myfirstproject" />
-      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day12_ExtentReports" />
-      <option name="METHOD_NAME" value="captureScreenshotTest" />
+      <option name="PACKAGE_NAME" value="assignment.homework02" />
+      <option name="MAIN_CLASS_NAME" value="assignment.homework02.Task3" />
+      <option name="METHOD_NAME" value="printTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day12_ExtentReports.extentReportsTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task4.searchBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myfirstproject.*" />
+          <option name="PATTERN" value="assignment.homework01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.myfirstproject" />
-      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.Day12_ExtentReports" />
-      <option name="METHOD_NAME" value="extentReportsTest2" />
+      <option name="PACKAGE_NAME" value="assignment.homework01" />
+      <option name="MAIN_CLASS_NAME" value="assignment.homework01.Task4" />
+      <option name="METHOD_NAME" value="searchBox" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Day12_ExtentReports.extentReportsTest2" />
-        <item itemvalue="JUnit.Day12_ExtentReports.captureScreenshotTest" />
-        <item itemvalue="JUnit.Day11_CaptureScreenshotOfElements.captureScreenshotTest" />
-        <item itemvalue="JUnit.Day11_CaptureScreenshotOfElements.test" />
-        <item itemvalue="JUnit.Day11_StaleElementReferenceException.slateReferenceTest" />
+        <item itemvalue="JUnit.Q02_WebTable_RoofHeight.test" />
+        <item itemvalue="JUnit.Q01_Actions_DrawShapes" />
+        <item itemvalue="JUnit.Task4.searchBox" />
+        <item itemvalue="JUnit.Task3.printTest" />
+        <item itemvalue="JUnit.TC09_SearchProduct.test" />
       </list>
     </recent_temporary>
   </component>
