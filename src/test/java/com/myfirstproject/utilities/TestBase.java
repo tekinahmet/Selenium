@@ -1,20 +1,15 @@
 package com.myfirstproject.utilities;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
-import com.github.javafaker.Faker;
 import org.apache.commons.io.FileUtils;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeAll;
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.FluentWait;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.support.ui.*;
+
 import java.awt.*;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
@@ -26,10 +21,14 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Random;
+
+import static org.junit.jupiter.api.Assertions.*;
+
 public abstract class TestBase {
     /*
     TestBase class is used for calling repetitive pre-conditions and post-conditions
     make the driver protected because it should be visible in the other classes
+
     Test base will be exteded other test classes and @Before and @After methods will be automatically executed
      */
     protected static WebDriver driver;
@@ -50,8 +49,11 @@ public abstract class TestBase {
     public static void setExtentReports(){
         String now = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
         String reportPath = System.getProperty("user.dir")+"/test-output/Reports/"+now+"extent-reports.html";
+
         extentReports = new ExtentReports();
+
         extentHtmlReporter = new ExtentHtmlReporter(reportPath);
+
 //        *****OPTIONAL : ADD CUSTOM SYSTEM INFORMATION USING extentReports****
         extentReports.setSystemInfo("Project Name : ","Payment Division");
         extentReports.setSystemInfo("Browser : ","Chrome");
@@ -76,6 +78,9 @@ public abstract class TestBase {
 //        required for generating the report
         extentReports.flush();
     }
+
+
+
     @BeforeEach
     public void setUp(){
         driver = new ChromeDriver();
@@ -116,7 +121,7 @@ public abstract class TestBase {
         Select objSelect = new Select(dropdownElement);
         objSelect.selectByValue(value);
     }
-    public static void dropdownSelectCustomMethod(WebElement dropdownElement,String textOfDropdown){
+    public static void dropdownSelectFromDropdown(WebElement dropdownElement,String textOfDropdown){
         List<WebElement> options = dropdownElement.findElements(By.tagName("option"));
         for (WebElement option : options){
             System.out.println(option.getText());
@@ -187,6 +192,7 @@ public abstract class TestBase {
         }
         driver.switchTo().window(origin);
     }
+
     //ACTIONS_DOUBLE CLICK : doubleClick(buttonElement)
     public static void actionsDoubleClick(WebElement element) {
         new Actions(driver).doubleClick(element).build().perform();
@@ -224,6 +230,7 @@ public abstract class TestBase {
         //        Actions actions = new Actions(driver);
         new Actions(driver).dragAndDropBy(source,x,y).perform();
     }
+
     //    JS EXECUTOR METHODS
     /*
     click with JS
@@ -234,6 +241,7 @@ public abstract class TestBase {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].click();",element);
     }
+
     //    EXPLICITLY WAIT FOR ELEMENT TO BE VISIBLE, SCROLL INTO THE ELEMENT, THEN CLICK BY JS
     public static void clickWithTimeoutByJS(WebElement element) {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", waitForVisibility(element,5));
@@ -281,6 +289,7 @@ public abstract class TestBase {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         return ((WebElement)js.executeScript("return document.getElementById('"+id+"')"));
     }
+
     /*
     getting the VALUE of elements-useful to get the values of input elements where getText() doesn't work
     param : id of the element
@@ -301,6 +310,7 @@ public abstract class TestBase {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("arguments[0].setAttribute('value','"+text+"')",inputElement);
     }
+
     /*   HARD WAIT:
     @param : second
   */
@@ -311,6 +321,7 @@ public abstract class TestBase {
             e.printStackTrace();
         }
     }
+
     /*
    SELENIUM WAIT REUSABLE METHODS
     */
@@ -331,6 +342,7 @@ public abstract class TestBase {
     public static WebElement waitForClickablility(By locator, int timeout) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
+
     }
     //======Fluent Wait====
     // params : xpath of teh element , max timeout in seconds, polling in second
@@ -343,6 +355,23 @@ public abstract class TestBase {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
         return element;
     }
+    //    This wait can be used when a new page opens
+    public static void waitForPageToLoad(long timeout) {
+        ExpectedCondition<Boolean> expectation = new ExpectedCondition<Boolean>() {
+            public Boolean apply(WebDriver driver) {
+                return ((JavascriptExecutor) driver).executeScript("return document.readyState").equals("complete");
+            }
+        };
+        try {
+            System.out.println("Waiting for page to load...");
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeout));
+            wait.until(expectation);
+        } catch (Throwable error) {
+            System.out.println(
+                    "Timeout waiting for Page Load Request to complete after " + timeout + " seconds");
+        }
+    }
+
     //    ROBOT UPLOAD FILE
     public static void uploadFile(String pathOfFile){
         try {
@@ -367,14 +396,16 @@ public abstract class TestBase {
             waitFor(1);
             System.out.println("Upload is completed...");
         }catch (Exception e){
+
         }
     }
+
     //        SCREENSHOTS : capture the screenshot of entire page
     public void captureScreenshotEntirePage(){
 //        1. getScreenShotAs method to capture the screenshot
         File image = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 //        2. save the image in a path with a dynamic name
-        String now = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date())+System.nanoTime();
+        String now = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
         String filePath = System.getProperty("user.dir")+"/test-output/Screenshot/"+now+"image.png";
 //        3. save the image in the path
         try {
@@ -388,7 +419,7 @@ public abstract class TestBase {
         //        1. getScreenShotAs method to capture the screenshot
         File image = element.getScreenshotAs(OutputType.FILE);
 //        2. save the image in a path with a dynamic name
-        String now = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date())+System.nanoTime();
+        String now = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
         String filePath = System.getProperty("user.dir")+"/test-output/ElementsScreenshot/"+now+"image.png";
 //        3. save the image in the path
         try {
@@ -397,12 +428,13 @@ public abstract class TestBase {
             throw new RuntimeException(e);
         }
     }
+
     //        SCREENSHOTS : capture the screenshot of the given WEB ELEMENT . Ex: captureScreenshotOfElement(logoElement)
     public static String captureScreenshotEntirePageAsString(){
         //        1. getScreenShotAs method to capture the screenshot
         File image = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
         //        2. save the image in a path with a dynamic name
-        String now = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date())+System.nanoTime();
+        String now = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
         String filePath = System.getProperty("user.dir")+"/test-output/Reports/"+now+"image.png";
         //        3. save the image in the path
         try {
@@ -412,5 +444,117 @@ public abstract class TestBase {
         }
         //       4. return the path of the image as string. (THIS WILL BE USED TO ATTACH IN THE EXTENT REPORTS)
         return new File(filePath).getAbsolutePath();
+    }
+
+    //    Accept a URL and navigates to that page
+    public static void openURL(String url){
+        driver.get(url);
+    }
+
+
+   /*
+   SELENIUM VERIFICATION REUSABLE METHODS
+    */
+    /**
+     * Verifies whether the element is displayed on page
+     * fails if the element is not found or not displayed
+     *
+     * @param element
+     */
+    public static void verifyElementDisplayed(WebElement element) {
+        try {
+            assertTrue(element.isDisplayed(), "Element is not visible: " + element);
+        } catch (NoSuchElementException e) {
+            org.junit.Assert.fail("Element is not found: " + element);
+        }
+    }
+
+    /**
+     * Verifies whether the element matching the provided locator is displayed on page
+     * fails if the element matching the provided locator is not found or not displayed
+     *
+     * @param by
+     */
+    public static void verifyElementDisplayed(By by) {
+        try {
+            assertTrue(driver.findElement(by).isDisplayed(), "Element not visible: " + by);
+        } catch (NoSuchElementException e) {
+            org.junit.Assert.fail("Element not found: " + by);
+        }
+    }
+    /**
+     * Verifies whether the element matching the provided locator is NOT displayed on page
+     * fails if the element matching the provided locator is not found or not displayed
+     *
+     * @param by
+     */
+    public static void verifyElementNotDisplayed(By by) {
+        try {
+            assertFalse(driver.findElement(by).isDisplayed(),"Element should not be visible: " + by);
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        }
+    }
+    /**
+     * Verifies whether the element matching the provided WebElement is NOT displayed on page
+     * fails if the element matching the WebElement is not found or not displayed
+     * @paramWebElement
+     */
+    public static void verifyElementNotDisplayed(WebElement element) {
+        try {
+            assertFalse(element.isDisplayed(),"Element should not be visible: " + element);
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static void verifyElementClickable(WebElement element) {
+        try {
+            assertTrue(element.isEnabled(),"Element not visible: " + element);
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+            fail("Element not found: " + element);
+
+        }
+    }
+    public static void verifyElementNotClickable(WebElement element) {
+        try {
+            assertFalse( element.isEnabled(),"Element not visible: " + element);
+        } catch (NoSuchElementException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /*
+       SELENIUM GET TEXT OF ELEMENT REUSABLE METHODS
+     */
+    public static String getTextWithTimeout(WebElement element, int timeout) {
+        String text="";
+        for (int i = 0; i < timeout; i++) {
+            try {
+                text = element.getText();
+                return text;
+            } catch (WebDriverException e) {
+                waitFor(1);
+            }
+        }
+        return null;
+    }
+
+    /*
+   SELENIUM TYPE IN AN INPUT REUSABLE METHODS
+   element = input element
+   text = text that you want to type
+   timeout = maximum wait
+     */
+    public static void sendKeysWithTimeout(WebElement element,String text,int timeout) {
+        for (int i = 0; i < timeout; i++) {
+            try {
+                element.sendKeys(text);
+                return;
+            } catch (WebDriverException e) {
+                waitFor(1);
+            }
+        }
     }
 }

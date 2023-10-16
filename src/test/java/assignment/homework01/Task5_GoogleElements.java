@@ -12,7 +12,7 @@ import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class Task5 {
+public class Task5_GoogleElements {
     WebDriver driver;
     @BeforeEach
     public void setUp() {
@@ -35,7 +35,7 @@ public class Task5 {
         assertTrue(driver.findElement(By.className("lnXdpd")).isDisplayed());
     }
     @Test
-    public void gmailLinktest(){
+    public void gmailLinkTest(){
 //      Verify if the Gmail link is displayed or not
         assertTrue(driver.findElement(By.linkText("Gmail")).isDisplayed());
     }

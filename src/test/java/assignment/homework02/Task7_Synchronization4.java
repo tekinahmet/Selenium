@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class Task7 {
+public class Task7_Synchronization4 {
     WebDriver driver;
     @BeforeEach
     public void setUp() {

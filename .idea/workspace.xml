@@ -55,55 +55,8 @@
       <recent name="C:\Users\Administrator\Desktop\BATCH 179-180 QA ENG\IdeaProjects\myseleniumproject\drivers" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Q01_Actions_DrawShapes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myseleniumproject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.myfirstproject.practices.practice06.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.myfirstproject.practices.practice06" />
-      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.practices.practice06.Q01_Actions_DrawShapes" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Q02_WebTable_RoofHeight.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myseleniumproject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.myfirstproject.practices.practice06.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.myfirstproject.practices.practice06" />
-      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.practices.practice06.Q02_WebTable_RoofHeight" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC09_SearchProduct.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myseleniumproject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="automationexercise.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="automationexercise" />
-      <option name="MAIN_CLASS_NAME" value="automationexercise.TC09_SearchProduct" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task3.printTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.test.test4">
+    <configuration name="Task5_Synchronization2.synchronization2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
@@ -112,24 +65,85 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="assignment.homework02" />
-      <option name="MAIN_CLASS_NAME" value="assignment.homework02.Task3" />
-      <option name="METHOD_NAME" value="printTest" />
+      <option name="MAIN_CLASS_NAME" value="assignment.homework02.Task5_Synchronization2" />
+      <option name="METHOD_NAME" value="synchronization2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task4.searchBox" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Task6_Synchronization3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assignment.homework01.*" />
+          <option name="PATTERN" value="assignment.homework02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="assignment.homework01" />
-      <option name="MAIN_CLASS_NAME" value="assignment.homework01.Task4" />
-      <option name="METHOD_NAME" value="searchBox" />
+      <option name="PACKAGE_NAME" value="assignment.homework02" />
+      <option name="MAIN_CLASS_NAME" value="assignment.homework02.Task6_Synchronization3" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task6_Synchronization3.synchronization1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myseleniumproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="assignment.homework02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="assignment.homework02" />
+      <option name="MAIN_CLASS_NAME" value="assignment.homework02.Task6_Synchronization3" />
+      <option name="METHOD_NAME" value="synchronization1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Task9_AccountCreating" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myseleniumproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.myfirstproject.homework.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.myfirstproject.homework" />
+      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.homework.Task9_AccountCreating" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myseleniumproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mytests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mytests" />
+      <option name="MAIN_CLASS_NAME" value="mytests.test" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myseleniumproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="mytests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="mytests" />
+      <option name="MAIN_CLASS_NAME" value="mytests.test" />
+      <option name="METHOD_NAME" value="test4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -137,11 +151,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Q01_Actions_DrawShapes" />
-        <item itemvalue="JUnit.Q02_WebTable_RoofHeight.test" />
-        <item itemvalue="JUnit.Task4.searchBox" />
-        <item itemvalue="JUnit.Task3.printTest" />
-        <item itemvalue="JUnit.TC09_SearchProduct.test" />
+        <item itemvalue="JUnit.test.test4" />
+        <item itemvalue="JUnit.test" />
+        <item itemvalue="JUnit.Task6_Synchronization3" />
+        <item itemvalue="JUnit.Task6_Synchronization3.synchronization1" />
+        <item itemvalue="JUnit.Task5_Synchronization2.synchronization2" />
       </list>
     </recent_temporary>
   </component>
@@ -155,5 +169,16 @@
       <updated>1695481796942</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/assignment/homework02/Task6_Synchronization3.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

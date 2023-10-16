@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 
-public class Task1 extends TestBase {
+public class Task1_Accordion extends TestBase {
     @Test
     public void sectionTwo(){
 //        When user goes to https://jqueryui.com/accordion/

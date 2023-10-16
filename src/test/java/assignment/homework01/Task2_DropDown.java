@@ -8,7 +8,9 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
-public class Task2 extends TestBase {
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class Task2_DropDown extends TestBase {
     @Test
     public void selectByIndexTest() {
 //          Create method selectByIndexTest and Select Option 1 using index from Simple dropdown
@@ -63,11 +65,15 @@ public class Task2 extends TestBase {
     @Test
     public void printFirstSelectedOptionTest(){
 //        Create method printFirstSelectedOptionTest Print first selected option of State selection dropdown
-        driver.get("http://testcenter.techproeducation.com/index.php?page=dropdown");
-
-        WebElement dropdownState = driver.findElement(By.id("state"));
-        Select firstSelected = new Select(dropdownState);
-        WebElement selectedOption = firstSelected.getFirstSelectedOption();
-        System.out.println("selectedOption = " + selectedOption);
+        driver.get("https://testcenter.techproeducation.com/index.php?page=dropdown");
+        WebElement dropdown = driver.findElement(By.id("state"));
+        Select select = new Select(dropdown);
+//        printing the selected option
+        System.out.println("Selected Option : "+select.getFirstSelectedOption().getText());
+//        selecting a different option from the dropdown
+        select.selectByIndex(2);
+//        printing the selected option
+        System.out.println("Selected Option : "+select.getFirstSelectedOption().getText());
+        assertEquals("Alaska", select.getFirstSelectedOption().getText());
     }
 }

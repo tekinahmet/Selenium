@@ -5,13 +5,8 @@ import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.Select;
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-
-public class Task2 extends TestBase {
+public class Task2_DatePicker extends TestBase {
     @Test
     public void dateTest(){
 //        When user goes to https://jqueryui.com/datepicker/

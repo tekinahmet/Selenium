@@ -7,12 +7,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
 
-public class Task4 {
+public class Task4_AutoComplete {
     WebDriver driver;
     @BeforeEach
     public void setUp(){
@@ -41,6 +39,17 @@ public class Task4 {
         WebElement appleScriptSelected = driver.findElement(By.xpath("//input[@id='tags']"));
         JavascriptExecutor js = (JavascriptExecutor) driver;
         appleScriptSelected.isSelected();
+
+//        //    When user goes to https://jqueryui.com/autocomplete/
+//        driver.get("https://jqueryui.com/autocomplete/");
+//        //    And type Apple
+//        driver.switchTo().frame(0);
+//        driver.findElement(By.id("tags")).sendKeys("Apple");
+//        //    Then select Applescript
+//        driver.findElement(By.xpath("//ul[@id='ui-id-1']//div[.='AppleScript']")).click();
+//        //    And check if Applescript is selected(you can get value by js to get text of the input)
+//        String inputValue = getValueByJS("tags");
+//        Assertions.assertEquals("AppleScript",inputValue);
     }
 
     @AfterEach

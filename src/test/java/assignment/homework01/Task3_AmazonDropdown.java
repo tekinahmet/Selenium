@@ -1,16 +1,14 @@
 package assignment.homework01;
 
 import com.myfirstproject.utilities.TestBase;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
 import java.util.List;
 
-public class Task3 extends TestBase {
+public class Task3_AmazonDropdown extends TestBase {
     @Test
     public void dropdownTest() throws InterruptedException {
 //        Go to https://www.amazon.com/

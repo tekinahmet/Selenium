@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class Task4 {
+public class Task4_GoogleSearch {
     WebDriver driver;
     @BeforeEach
     public void setUp() {
