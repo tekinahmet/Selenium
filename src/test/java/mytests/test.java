@@ -20,6 +20,8 @@ import java.util.List;
 public class test  extends TestBase {
     @Test
     public void test4(){
+        String filePath = System.getProperty("user.dir");
+        System.out.println("filePath = " + filePath);
 
     }
 

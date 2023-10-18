@@ -55,65 +55,66 @@
       <recent name="C:\Users\Administrator\Desktop\BATCH 179-180 QA ENG\IdeaProjects\myseleniumproject\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.test.test4">
-    <configuration name="Task5_Synchronization2.synchronization2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TC13_VerifyProductQuantityInCart.test">
+    <configuration name="TC12_AddProductsInCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assignment.homework02.*" />
+          <option name="PATTERN" value="automationexercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="assignment.homework02" />
-      <option name="MAIN_CLASS_NAME" value="assignment.homework02.Task5_Synchronization2" />
-      <option name="METHOD_NAME" value="synchronization2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Task6_Synchronization3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myseleniumproject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="assignment.homework02.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="assignment.homework02" />
-      <option name="MAIN_CLASS_NAME" value="assignment.homework02.Task6_Synchronization3" />
+      <option name="PACKAGE_NAME" value="automationexercise" />
+      <option name="MAIN_CLASS_NAME" value="automationexercise.TC12_AddProductsInCart" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task6_Synchronization3.synchronization1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TC12_AddProductsInCart.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="assignment.homework02.*" />
+          <option name="PATTERN" value="automationexercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="assignment.homework02" />
-      <option name="MAIN_CLASS_NAME" value="assignment.homework02.Task6_Synchronization3" />
-      <option name="METHOD_NAME" value="synchronization1" />
+      <option name="PACKAGE_NAME" value="automationexercise" />
+      <option name="MAIN_CLASS_NAME" value="automationexercise.TC12_AddProductsInCart" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Task9_AccountCreating" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TC13_VerifyProductQuantityInCart.tes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="myseleniumproject" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.myfirstproject.homework.*" />
+          <option name="PATTERN" value="automationexercise.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.myfirstproject.homework" />
-      <option name="MAIN_CLASS_NAME" value="com.myfirstproject.homework.Task9_AccountCreating" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="automationexercise" />
+      <option name="MAIN_CLASS_NAME" value="automationexercise.TC13_VerifyProductQuantityInCart" />
+      <option name="METHOD_NAME" value="tes" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC13_VerifyProductQuantityInCart.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myseleniumproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="automationexercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="automationexercise" />
+      <option name="MAIN_CLASS_NAME" value="automationexercise.TC13_VerifyProductQuantityInCart" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -133,29 +134,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test.test4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myseleniumproject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="mytests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="mytests" />
-      <option name="MAIN_CLASS_NAME" value="mytests.test" />
-      <option name="METHOD_NAME" value="test4" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.test.test4" />
+        <item itemvalue="JUnit.TC13_VerifyProductQuantityInCart.test" />
+        <item itemvalue="JUnit.TC13_VerifyProductQuantityInCart.tes" />
+        <item itemvalue="JUnit.TC12_AddProductsInCart.test" />
+        <item itemvalue="JUnit.TC12_AddProductsInCart" />
         <item itemvalue="JUnit.test" />
-        <item itemvalue="JUnit.Task6_Synchronization3" />
-        <item itemvalue="JUnit.Task6_Synchronization3.synchronization1" />
-        <item itemvalue="JUnit.Task5_Synchronization2.synchronization2" />
       </list>
     </recent_temporary>
   </component>
