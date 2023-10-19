@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class TC09_SearchProduct extends TestBase {
+public class TC9_SearchProduct extends TestBase {
     @Test
     public void test(){
 //        2. Navigate to url 'http://automationexercise.com'
