@@ -55,7 +55,7 @@
       <recent name="C:\Users\Administrator\Desktop\BATCH 179-180 QA ENG\IdeaProjects\myseleniumproject\drivers" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TC14_PlaceOrderRegisterWhileCheckout.test">
+  <component name="RunManager">
     <configuration name="TC14_PlaceOrderRegisterWhileCheckout" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="automationexercise.TC14_PlaceOrderRegisterWhileCheckout" />
       <module name="myseleniumproject" />
@@ -65,38 +65,6 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC13_VerifyProductQuantityInCart.tes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myseleniumproject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="automationexercise.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="automationexercise" />
-      <option name="MAIN_CLASS_NAME" value="automationexercise.TC13_VerifyProductQuantityInCart" />
-      <option name="METHOD_NAME" value="tes" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TC13_VerifyProductQuantityInCart.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="myseleniumproject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="automationexercise.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="automationexercise" />
-      <option name="MAIN_CLASS_NAME" value="automationexercise.TC13_VerifyProductQuantityInCart" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -132,13 +100,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TC15_PlaceOrderRegisterBeforeCheckout_ChromeDriver" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myseleniumproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="automationexercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="automationexercise" />
+      <option name="MAIN_CLASS_NAME" value="automationexercise.TC15_PlaceOrderRegisterBeforeCheckout_ChromeDriver" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TC15_PlaceOrderRegisterBeforeCheckout_ChromeDriver.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myseleniumproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="automationexercise.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="automationexercise" />
+      <option name="MAIN_CLASS_NAME" value="automationexercise.TC15_PlaceOrderRegisterBeforeCheckout_ChromeDriver" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TC15_PlaceOrderRegisterBeforeCheckout_ChromeDriver.test" />
+        <item itemvalue="JUnit.TC15_PlaceOrderRegisterBeforeCheckout_ChromeDriver" />
         <item itemvalue="JUnit.TC14_PlaceOrderRegisterWhileCheckout.test" />
         <item itemvalue="JUnit.TC14_PlaceOrderRegisterWhileCheckout" />
         <item itemvalue="Application.TC14_PlaceOrderRegisterWhileCheckout" />
-        <item itemvalue="JUnit.TC13_VerifyProductQuantityInCart.test" />
-        <item itemvalue="JUnit.TC13_VerifyProductQuantityInCart.tes" />
       </list>
     </recent_temporary>
   </component>
